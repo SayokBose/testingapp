@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     let val = 1;
     var value = 54234352345;
+    var penis = 1.2
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
