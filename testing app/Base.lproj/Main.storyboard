@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-gJ-0aG">
-                                <rect key="frame" x="317" y="83" width="46" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-gJ-0aG">
+                                <rect key="frame" x="335" y="87" width="46" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="" imagePadding="0.0"/>
                                 <connections>
                                     <action selector="buttonnext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8V-P7-Yzb"/>
                                     <segue destination="8G5-Kr-lKB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="B3D-Rk-gnq"/>
@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1775" y="-631"/>
+            <point key="canvasLocation" x="-1775.3623188405797" y="-631.47321428571422"/>
         </scene>
         <!--Page 2-->
         <scene sceneID="w5P-AC-wVW">
