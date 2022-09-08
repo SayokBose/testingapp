@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     let val = 1;
     var value = 2;
+    var value2 = 5;
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
