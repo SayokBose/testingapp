@@ -64,7 +64,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pWl-3G-8ic"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="l8D-Qy-EWB"/>
                 </viewController>
@@ -76,6 +76,9 @@
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
