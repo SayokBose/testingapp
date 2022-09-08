@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,58 +13,94 @@
             <objects>
                 <viewController title="Home Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="testing_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ReStashers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qj-9P-sFG">
-                                <rect key="frame" x="131" y="429.5" width="152.5" height="37"/>
+                                <rect key="frame" x="118.66666666666669" y="54" width="153" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3E-pq-hqi">
-                                <rect key="frame" x="31" y="832" width="47" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3E-pq-hqi" userLabel="Calender">
+                                <rect key="frame" x="22.666666666666671" y="793" width="47" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system"/>
                                 <connections>
                                     <segue destination="ewc-ep-Vfj" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Fyb-Ya-OpX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-tZ-zgj">
-                                <rect key="frame" x="183" y="832" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbY-tZ-zgj" userLabel="Camera">
+                                <rect key="frame" x="169.66666666666666" y="793" width="50.666666666666657" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Wb-OKX">
-                                <rect key="frame" x="347" y="816" width="47" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Wb-OKX" userLabel="Settings">
+                                <rect key="frame" x="320.66666666666669" y="793" width="47" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gear" catalog="system"/>
                                 <connections>
                                     <segue destination="8G5-Kr-lKB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="DzE-6G-vTe"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-Pf-yhn">
+                                <rect key="frame" x="0.0" y="101" width="390" height="682"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpD-5X-xYA">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="zTS-Sw-VNv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NpD-5X-xYA" firstAttribute="top" secondItem="b1l-Pf-yhn" secondAttribute="top" id="IJD-qY-bE9"/>
+                                    <constraint firstAttribute="bottom" secondItem="NpD-5X-xYA" secondAttribute="bottom" constant="10" id="QHk-3e-t8g"/>
+                                    <constraint firstAttribute="trailing" secondItem="NpD-5X-xYA" secondAttribute="trailing" id="QKZ-K3-EGE"/>
+                                    <constraint firstItem="NpD-5X-xYA" firstAttribute="leading" secondItem="b1l-Pf-yhn" secondAttribute="leading" id="er3-cc-YYa"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3Qj-9P-sFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kct-3D-qfl"/>
-                            <constraint firstItem="3Qj-9P-sFG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tnw-XT-uEv"/>
+                            <constraint firstItem="7mh-Wb-OKX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SbY-tZ-zgj" secondAttribute="trailing" constant="8" symbolic="YES" id="0Br-Rd-iRa"/>
+                            <constraint firstAttribute="bottom" secondItem="SbY-tZ-zgj" secondAttribute="bottom" constant="20" id="0et-HJ-0km"/>
+                            <constraint firstItem="s3E-pq-hqi" firstAttribute="top" secondItem="b1l-Pf-yhn" secondAttribute="bottom" constant="10" id="2Yb-ED-py8"/>
+                            <constraint firstItem="3Qj-9P-sFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2uW-LQ-KBj"/>
+                            <constraint firstItem="b1l-Pf-yhn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EdO-jW-RfQ"/>
+                            <constraint firstItem="3Qj-9P-sFG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="H4S-mS-pVE"/>
+                            <constraint firstItem="b1l-Pf-yhn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QFH-er-obD"/>
+                            <constraint firstAttribute="bottom" secondItem="7mh-Wb-OKX" secondAttribute="bottom" constant="20" id="WST-RQ-yty"/>
+                            <constraint firstItem="NpD-5X-xYA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1.4218" id="bIH-Qt-8fx"/>
+                            <constraint firstItem="b1l-Pf-yhn" firstAttribute="top" secondItem="3Qj-9P-sFG" secondAttribute="bottom" constant="10" id="dRp-Zb-ZfO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7mh-Wb-OKX" secondAttribute="trailing" constant="22.333333333333314" id="eQQ-5A-fZE"/>
+                            <constraint firstItem="SbY-tZ-zgj" firstAttribute="leading" secondItem="s3E-pq-hqi" secondAttribute="trailing" constant="100" id="l5g-Th-4Jo"/>
+                            <constraint firstItem="s3E-pq-hqi" firstAttribute="top" secondItem="b1l-Pf-yhn" secondAttribute="bottom" constant="10" id="nha-O2-bsC"/>
+                            <constraint firstItem="SbY-tZ-zgj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ocM-PH-QkK"/>
+                            <constraint firstItem="NpD-5X-xYA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qz6-nw-QT8"/>
+                            <constraint firstItem="s3E-pq-hqi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22.666666666666671" id="uk3-UM-s36"/>
+                            <constraint firstAttribute="bottom" secondItem="s3E-pq-hqi" secondAttribute="bottom" constant="20" id="wpz-Iv-xDE"/>
+                            <constraint firstItem="b1l-Pf-yhn" firstAttribute="top" secondItem="3Qj-9P-sFG" secondAttribute="bottom" constant="10" id="xN5-qc-te1"/>
+                            <constraint firstItem="SbY-tZ-zgj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="s3E-pq-hqi" secondAttribute="trailing" constant="8" symbolic="YES" id="zus-UO-s0v"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="390" height="844"/>
+                    <connections>
+                        <outlet property="mainScroll" destination="NpD-5X-xYA" id="shF-9I-Xss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1775.3623188405797" y="-631.47321428571422"/>
+            <point key="canvasLocation" x="-1775.3846153846152" y="-631.99052132701422"/>
         </scene>
         <!--Page 2-->
         <scene sceneID="w5P-AC-wVW">
             <objects>
                 <viewController title="Page 2" id="8G5-Kr-lKB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slf-5d-x9g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AC-di-Y9G">
@@ -91,7 +127,7 @@
             <objects>
                 <viewController title="Calender page" id="ewc-ep-Vfj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="42l-yA-pLi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-vO-Awq">
@@ -115,7 +151,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cFv-qu-sa1"/>
+        <segue reference="DfP-ni-2f5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
@@ -127,6 +163,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
